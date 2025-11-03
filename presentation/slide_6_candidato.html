@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Candidatos - Fênix Gestão RH</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: #001F3F;
+            color: #FFFFFF;
+        }
+
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: #001F3F;
+            display: flex;
+            flex-direction: column;
+            padding: 50px 40px;
+            gap: 40px;
+        }
+
+        .header {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .header h1 {
+            font-size: 48px;
+            font-weight: 800;
+            color: #FF8C00;
+        }
+
+        .header p {
+            font-size: 16px;
+            color: #F5F5F5;
+            font-weight: 400;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            flex: 1;
+        }
+
+        .feature-card {
+            background: #F5F5F5;
+            padding: 30px 25px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+            text-align: center;
+            min-height: 180px;
+            justify-content: center;
+        }
+
+        .feature-icon {
+            font-size: 32px;
+            color: #FF8C00;
+            font-weight: 800;
+        }
+
+        .feature-card-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: #001F3F;
+        }
+
+        .feature-card-text {
+            font-size: 13px;
+            color: #333333;
+            line-height: 1.5;
+        }
+
+        .accent-bar {
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(90deg, #FF8C00 0%, transparent 100%);
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h1>Para Candidatos</h1>
+            <p>Encontre oportunidades e acompanhe sua carreira</p>
+            <div class="accent-bar"></div>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🔍</div>
+                <div class="feature-card-title">Buscar Vagas</div>
+                <div class="feature-card-text">Encontre oportunidades alinhadas com seu perfil</div>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">📋</div>
+                <div class="feature-card-title">Filtrar Resultados</div>
+                <div class="feature-card-text">Filtre por cidade, modalidade e salário</div>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">✍️</div>
+                <div class="feature-card-title">Se Candidatar</div>
+                <div class="feature-card-text">Candidate-se às vagas que mais interessam</div>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">📊</div>
+                <div class="feature-card-title">Acompanhar Status</div>
+                <div class="feature-card-text">Monitore suas candidaturas em tempo real</div>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">📁</div>
+                <div class="feature-card-title">Histórico</div>
+                <div class="feature-card-text">Visualize todas as suas candidaturas anteriores</div>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">👤</div>
+                <div class="feature-card-title">Editar Perfil</div>
+                <div class="feature-card-text">Mantenha seu perfil atualizado e atrativo</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

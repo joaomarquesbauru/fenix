@@ -75,3 +75,12 @@
 - [ ] Deploy em produção
 - [ ] Configurar domínio
 - [ ] Testes finais
+
+## Deploy Permanente (Nova)
+- [ ] Otimizar projeto para produção
+- [ ] Fazer push para GitHub
+- [ ] Criar Secret database_url na Vercel
+- [ ] Configurar variáveis de ambiente
+- [ ] Fazer deploy na Vercel
+- [ ] Testar site em produção
+- [ ] Obter URL final

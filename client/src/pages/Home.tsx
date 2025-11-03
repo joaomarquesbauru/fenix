@@ -1,7 +1,7 @@
-import { useNavigate } from "wouter";
+import { useLocation } from "wouter";
 
 export default function Home() {
-  const [, setLocation] = useNavigate();
+  const [, setLocation] = useLocation();
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">

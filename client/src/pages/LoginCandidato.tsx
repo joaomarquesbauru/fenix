@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { useNavigate, Link } from "wouter";
+import { useLocation, Link } from "wouter";
 
 export default function LoginCandidato() {
-  const [, setLocation] = useNavigate();
+  const [, setLocation] = useLocation();
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
   const [erro, setErro] = useState("");

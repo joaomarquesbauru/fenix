@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras de Acesso - Empresa - Fênix Gestão RH</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: #001F3F;
+            color: #FFFFFF;
+        }
+
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: #001F3F;
+            display: flex;
+            flex-direction: column;
+            padding: 50px 40px;
+            gap: 40px;
+        }
+
+        .header {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .header h1 {
+            font-size: 44px;
+            font-weight: 800;
+            color: #FF8C00;
+        }
+
+        .header p {
+            font-size: 16px;
+            color: #F5F5F5;
+        }
+
+        .content {
+            display: flex;
+            gap: 40px;
+            flex: 1;
+            align-items: flex-start;
+        }
+
+        .column {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .column-title {
+            font-size: 22px;
+            font-weight: 700;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #FF8C00;
+            margin-bottom: 10px;
+        }
+
+        .column-title.allowed {
+            color: #FF8C00;
+        }
+
+        .column-title.denied {
+            color: #FF6B6B;
+        }
+
+        .rule-item {
+            padding: 18px;
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+        }
+
+        .rule-item.allowed {
+            background: #F5F5F5;
+            border-left: 5px solid #FF8C00;
+        }
+
+        .rule-item.denied {
+            background: rgba(255, 107, 107, 0.1);
+            border-left: 5px solid #FF6B6B;
+        }
+
+        .rule-icon {
+            font-size: 20px;
+            font-weight: 800;
+            min-width: 24px;
+            text-align: center;
+            flex-shrink: 0;
+        }
+
+        .rule-item.allowed .rule-icon {
+            color: #FF8C00;
+        }
+
+        .rule-item.denied .rule-icon {
+            color: #FF6B6B;
+        }
+
+        .rule-text {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .rule-title {
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        .rule-item.allowed .rule-title {
+            color: #001F3F;
+        }
+
+        .rule-item.denied .rule-title {
+            color: #FF6B6B;
+        }
+
+        .rule-description {
+            font-size: 12px;
+            line-height: 1.4;
+        }
+
+        .rule-item.allowed .rule-description {
+            color: #333333;
+        }
+
+        .rule-item.denied .rule-description {
+            color: #CCCCCC;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h1>Regras de Acesso - Empresa</h1>
+            <p>Permissões e Restrições no Sistema</p>
+        </div>
+
+        <div class="content">
+            <div class="column">
+                <div class="column-title allowed">✓ Permissões</div>
+
+                <div class="rule-item allowed">
+                    <div class="rule-icon">✓</div>
+                    <div class="rule-text">
+                        <div class="rule-title">Criar Vagas</div>
+                        <div class="rule-description">Publicar novas vagas de emprego</div>
+                    </div>
+                </div>
+
+                <div class="rule-item allowed">
+                    <div class="rule-icon">✓</div>
+                    <div class="rule-text">
+                        <div class="rule-title">Editar Vagas</div>
+                        <div class="rule-description">Modificar informações das vagas</div>
+                    </div>
+                </div>
+
+                <div class="rule-item allowed">
+                    <div class="rule-icon">✓</div>
+                    <div class="rule-text">
+                        <div class="rule-title">Deletar Vagas</div>
+                        <div class="rule-description">Remover vagas do sistema</div>
+                    </div>
+                </div>
+
+                <div class="rule-item allowed">
+                    <div class="rule-icon">✓</div>
+                    <div class="rule-text">
+                        <div class="rule-title">Visualizar Candidatos</div>
+                        <div class="rule-description">Acessar perfis de candidatos</div>
+                    </div>
+                </div>
+
+                <div class="rule-item allowed">
+                    <div class="rule-icon">✓</div>
+                    <div class="rule-text">
+                        <div class="rule-title">Gerenciar Candidaturas</div>
+                        <div class="rule-description">Acompanhar e organizar candidaturas</div>
+                    </div>
+                </div>
+
+                <div class="rule-item allowed">
+                    <div class="rule-icon">✓</div>
+                    <div class="rule-text">
+                        <div class="rule-title">Editar Perfil</div>
+                        <div class="rule-description">Atualizar dados da empresa</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="column-title denied">✗ Restrições</div>
+
+                <div class="rule-item denied">
+                    <div class="rule-icon">✗</div>
+                    <div class="rule-text">
+                        <div class="rule-title">Editar Dados de Candidatos</div>
+                        <div class="rule-description">Não pode modificar perfis</div>
+                    </div>
+                </div>
+
+                <div class="rule-item denied">
+                    <div class="rule-icon">✗</div>
+                    <div class="rule-text">
+                        <div class="rule-title">Deletar Candidatos</div>
+                        <div class="rule-description">Não pode remover perfis</div>
+                    </div>
+                </div>
+
+                <div class="rule-item denied">
+                    <div class="rule-icon">✗</div>
+                    <div class="rule-text">
+                        <div class="rule-title">Acessar Outras Empresas</div>
+                        <div class="rule-description">Dados isolados por empresa</div>
+                    </div>
+                </div>
+
+                <div class="rule-item denied">
+                    <div class="rule-icon">✗</div>
+                    <div class="rule-text">
+                        <div class="rule-title">Gerenciar Usuários</div>
+                        <div class="rule-description">Sem acesso a painel admin</div>
+                    </div>
+                </div>
+
+                <div class="rule-item denied">
+                    <div class="rule-icon">✗</div>
+                    <div class="rule-text">
+                        <div class="rule-title">Alterar Permissões</div>
+                        <div class="rule-description">Não pode modificar regras</div>
+                    </div>
+                </div>
+
+                <div class="rule-item denied">
+                    <div class="rule-icon">✗</div>
+                    <div class="rule-text">
+                        <div class="rule-title">Acessar Dados Financeiros</div>
+                        <div class="rule-description">Sem acesso a relatórios globais</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

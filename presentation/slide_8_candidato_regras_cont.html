@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras de Acesso - Candidato (Parte 2) - Fênix Gestão RH</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: #001F3F;
+            color: #FFFFFF;
+        }
+
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: #001F3F;
+            display: flex;
+            flex-direction: column;
+            padding: 50px 40px;
+            gap: 35px;
+        }
+
+        .header {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .header h1 {
+            font-size: 44px;
+            font-weight: 800;
+            color: #FF8C00;
+        }
+
+        .header p {
+            font-size: 16px;
+            color: #F5F5F5;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            color: #FF8C00;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .rules-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            flex: 1;
+        }
+
+        .rule-card {
+            background: #F5F5F5;
+            padding: 22px;
+            border-left: 5px solid #999999;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .rule-card-title {
+            font-size: 15px;
+            font-weight: 700;
+            color: #666666;
+        }
+
+        .rule-card-text {
+            font-size: 13px;
+            color: #666666;
+            line-height: 1.5;
+        }
+
+        .footer {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 2px solid rgba(255, 140, 0, 0.3);
+        }
+
+        .footer p {
+            font-size: 14px;
+            color: #FF8C00;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h1>Regras de Acesso - Candidato</h1>
+            <div class="subtitle">Parte 2: Restrições e Limitações</div>
+            <p>Funcionalidades não disponíveis para candidatos</p>
+        </div>
+
+        <div class="rules-grid">
+            <div class="rule-card">
+                <div class="rule-card-title">✗ Criar Vagas</div>
+                <div class="rule-card-text">Não pode criar, editar ou deletar vagas de emprego</div>
+            </div>
+
+            <div class="rule-card">
+                <div class="rule-card-title">✗ Acessar Dados Empresariais</div>
+                <div class="rule-card-text">Não pode visualizar informações internas de empresas</div>
+            </div>
+
+            <div class="rule-card">
+                <div class="rule-card-title">✗ Gerenciar Usuários</div>
+                <div class="rule-card-text">Não tem acesso a painel administrativo ou gerenciamento de contas</div>
+            </div>
+
+            <div class="rule-card">
+                <div class="rule-card-title">✗ Alterar Configurações Globais</div>
+                <div class="rule-card-text">Não pode modificar regras ou configurações do sistema</div>
+            </div>
+
+            <div class="rule-card">
+                <div class="rule-card-title">✗ Visualizar Relatórios</div>
+                <div class="rule-card-text">Não pode acessar relatórios e estatísticas globais da plataforma</div>
+            </div>
+
+            <div class="rule-card">
+                <div class="rule-card-title">✗ Deletar Contas</div>
+                <div class="rule-card-text">Não pode remover contas de usuários ou empresas do sistema</div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Isolamento de dados garante segurança e privacidade para todos os usuários</p>
+        </div>
+    </div>
+</body>
+</html>

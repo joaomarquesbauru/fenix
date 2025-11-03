@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcionalidades - Empresa - Fênix Gestão RH</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: #001F3F;
+            color: #FFFFFF;
+        }
+
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: #001F3F;
+            display: flex;
+            flex-direction: column;
+            padding: 50px 40px;
+            gap: 40px;
+        }
+
+        .header {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .header h1 {
+            font-size: 44px;
+            font-weight: 800;
+            color: #FF8C00;
+        }
+
+        .header p {
+            font-size: 16px;
+            color: #F5F5F5;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            flex: 1;
+        }
+
+        .feature-card {
+            background: #F5F5F5;
+            padding: 30px;
+            border-left: 6px solid #FF8C00;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            min-height: 160px;
+            justify-content: flex-start;
+        }
+
+        .feature-icon {
+            font-size: 32px;
+            color: #FF8C00;
+            font-weight: 700;
+        }
+
+        .feature-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #001F3F;
+        }
+
+        .feature-description {
+            font-size: 14px;
+            color: #333333;
+            line-height: 1.5;
+        }
+
+        .accent-line {
+            width: 60px;
+            height: 3px;
+            background: #FF8C00;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h1>Funcionalidades - Empresa</h1>
+            <p>Tudo que você precisa para gerenciar vagas e candidatos</p>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">👤</div>
+                <div class="feature-title">Cadastro Completo</div>
+                <div class="feature-description">Crie sua conta com informações da empresa, CNPJ e dados de contato</div>
+                <div class="accent-line"></div>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">➕</div>
+                <div class="feature-title">Criar Vagas</div>
+                <div class="feature-description">Publique novas vagas com título, descrição, requisitos e salário</div>
+                <div class="accent-line"></div>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">✏️</div>
+                <div class="feature-title">Editar Vagas</div>
+                <div class="feature-description">Atualize informações de vagas já publicadas a qualquer momento</div>
+                <div class="accent-line"></div>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🗑️</div>
+                <div class="feature-title">Deletar Vagas</div>
+                <div class="feature-description">Remova vagas que não estão mais disponíveis ou fechadas</div>
+                <div class="accent-line"></div>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">👥</div>
+                <div class="feature-title">Visualizar Candidatos</div>
+                <div class="feature-description">Acesse perfis completos de todos os candidatos interessados</div>
+                <div class="accent-line"></div>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">📋</div>
+                <div class="feature-title">Gerenciar Candidaturas</div>
+                <div class="feature-description">Acompanhe e organize todas as candidaturas recebidas por vaga</div>
+                <div class="accent-line"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

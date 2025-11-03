@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { useNavigate, Link } from "wouter";
+import { useLocation, Link } from "wouter";
 
 export default function CadastroEmpresa() {
-  const [, setLocation] = useNavigate();
+  const [, setLocation] = useLocation();
   const [formData, setFormData] = useState({
     nome_da_empresa: "",
     cnpj: "",
